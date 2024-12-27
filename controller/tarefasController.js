@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client"
+const { PrismaClient } = require("@prisma/client")
 const prisma = new PrismaClient()
 
 const criarTarefa = async (req, res) => {
@@ -15,3 +15,5 @@ const criarTarefa = async (req, res) => {
         res.status(500).json({ error: "Erro inesperado"})
     }
 }
+
+module.exports = { criarTarefa };
