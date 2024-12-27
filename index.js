@@ -4,6 +4,7 @@ const tarefaRouter = require('./routes/tarefaRouter');
 const app = express();
 
 app.use(express.json());
+
 app.use('/api', tarefaRouter);
 
 const PORT = 3000;
