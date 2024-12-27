@@ -12,6 +12,6 @@ const criarTarefa = async (req, res) => {
         });
         res.status(200).json({newTarefa})
     } catch(error){
-        res.status(500).json({ error: "Deu Ruim"})
+        res.status(500).json({ error: "Erro inesperado"})
     }
 }

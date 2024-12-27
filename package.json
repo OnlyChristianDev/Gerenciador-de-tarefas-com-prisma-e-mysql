@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/node": "^22.10.2",
     "prisma": "^6.1.0"
   },
   "dependencies": {
@@ -9,8 +10,7 @@
   "name": "projeto1",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
-    "scripts": {
+  "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
