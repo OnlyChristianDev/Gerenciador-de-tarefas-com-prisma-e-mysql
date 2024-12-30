@@ -4,5 +4,5 @@ const router = express.Router();
 
 router.post('/tarefas', TarefaController.criarTarefa);
 router.get('/tarefas', TarefaController.listarTarefas)
-
+router.delete('/tarefas', TarefaController.removerTarefa)
 module.exports = router;
