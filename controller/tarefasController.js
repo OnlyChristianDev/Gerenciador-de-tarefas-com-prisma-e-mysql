@@ -41,7 +41,7 @@ const removerTarefa = async (req, res) => {
             res.status(400).json({ msg: "o ID é obrigatório para a remoção das tarefas" })
         } 
 
-        const tarefaRemovida = prisma.tarefas.delete({
+        const tarefaRemovida = await prisma.tarefas.delete({
             where: { id: parseInt(id) },
         })
         res.status(200).json({ msg: "tarefa removida com sucesso", tarefaRemovida })
@@ -52,4 +52,4 @@ const removerTarefa = async (req, res) => {
 }
 
 
-module.exports = { criarTarefa, listarTarefas, removerTarefa};
+module.exports = { criarTarefa, listarTarefas, removerTarefa };
